@@ -50,15 +50,6 @@ static NSString *const ShouldSendEmailKey = @"ShouldSendEmailKey";
 }
 
 #pragma mark - event
-- (IBAction)autoPackage:(id)sender {
-    if (![self isValidWithPackageParameters]) {
-        return;
-    }
-    
-    [self updateSetupParameters];
-    [self invokingShellScriptWithPackageType:self.packageType];
-}
-
 - (IBAction)autoPackageAndUpload:(id)sender {
     if (![self isValidWithPackageParameters]) {
         return;
@@ -172,8 +163,6 @@ static NSString *const ShouldSendEmailKey = @"ShouldSendEmailKey";
         [args addObject:@(0).stringValue];
     }
     
-    
-    self.packageButton.enabled = NO;
     self.packageAndUploadButton.enabled = NO;
     self.progressView.hidden = NO;
     self.progressDescLabel.hidden = NO;
@@ -197,7 +186,6 @@ static NSString *const ShouldSendEmailKey = @"ShouldSendEmailKey";
             [self.timer invalidate];
             self.timer = nil;
             [self printLog:self.timer];
-            self.packageButton.enabled = YES;
             self.packageAndUploadButton.enabled = YES;
             
             int status = [shellTask terminationStatus];

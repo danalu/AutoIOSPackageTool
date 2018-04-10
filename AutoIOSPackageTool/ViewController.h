@@ -12,7 +12,6 @@
 
 @property (weak) IBOutlet NSButton *firRadio;
 @property (weak) IBOutlet NSButton *appStoreRadio;
-@property (weak, nonatomic) IBOutlet NSButton *packageButton;
 @property (weak, nonatomic) IBOutlet NSButton *packageAndUploadButton;
 @property (weak) IBOutlet NSTextField *versionInputTextField;
 @property (weak) IBOutlet NSTextView *updateLogTextView;

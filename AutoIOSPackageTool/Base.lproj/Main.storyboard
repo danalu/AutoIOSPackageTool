@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -787,19 +787,8 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dD1-Sh-i0C">
-                                <rect key="frame" x="77" y="256" width="120" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="push" title="打包" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="p0r-B6-fjh">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <connections>
-                                    <action selector="autoPackage:" target="XfG-lQ-9wD" id="jCe-xt-ZhL"/>
-                                </connections>
-                            </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sPI-mM-9e1">
-                                <rect key="frame" x="225" y="256" width="120" height="32"/>
+                                <rect key="frame" x="155" y="256" width="120" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="打包并上传" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="TcT-GG-IXA">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -890,7 +879,7 @@
                                 <rect key="frame" x="20" y="565" width="311" height="32"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" sendsActionOnEndEditing="YES" placeholderString="例：/User/Dana/EYEE/shell.sh" id="yM7-h6-Nsh">
-                                    <font key="font" metaFont="system" size="11"/>
+                                    <font key="font" metaFont="smallSystem"/>
                                     <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
@@ -913,7 +902,6 @@
                         <outlet property="appStoreRadio" destination="G5l-hm-VIp" id="scn-DQ-wSP"/>
                         <outlet property="firRadio" destination="cdU-1B-yyS" id="3rF-N1-yGD"/>
                         <outlet property="packageAndUploadButton" destination="sPI-mM-9e1" id="IMg-jk-VCt"/>
-                        <outlet property="packageButton" destination="dD1-Sh-i0C" id="zgi-56-HvB"/>
                         <outlet property="packageLogTextView" destination="r0t-sN-mZh" id="Pc3-Sq-PYQ"/>
                         <outlet property="progressDescLabel" destination="aJa-D7-ybq" id="bNh-Pr-CAo"/>
                         <outlet property="progressView" destination="Wx1-8d-iWf" id="0SD-qU-DrN"/>
