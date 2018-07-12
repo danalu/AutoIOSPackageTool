@@ -47,6 +47,7 @@ static NSString *const ShouldSendEmailKey = @"ShouldSendEmailKey";
     NSTask *task = [[NSTask alloc]init];
     [task setLaunchPath:execPath];
     [task launch];
+    
 }
 
 #pragma mark - event
